@@ -1,4 +1,4 @@
-// index.js - Entry path for app
+// Entry path for app
 // Core imports
 import React from 'react';
 import ReactDOM from 'react-dom';
