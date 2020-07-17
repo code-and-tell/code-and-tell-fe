@@ -1,12 +1,24 @@
+// index.js - Entry path for app
+// Core imports
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './base.scss';
+
+// Utility imports
+import { BrowserRouter } from 'react-router-dom';
+
+// Component imports
 import App from './App';
+
+// Files / Assets
+import './base.scss';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
