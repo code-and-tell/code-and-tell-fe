@@ -1,6 +1,15 @@
 // Base styles and imports
 @import 'reset';
 
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+       url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans';
 }

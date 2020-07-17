@@ -1,0 +1,11 @@
+// Styles for Header scaffold component
+.Header {
+  display: flex;
+  width: 100%;
+  background: #CCC;
+  padding: 1rem;
+
+  h1 {
+    font-size: 2rem;
+  }
+}
