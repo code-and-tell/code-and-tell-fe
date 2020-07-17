@@ -3,7 +3,7 @@
 import React from 'react';
 
 // Component imports
-// To Be Determined
+import { Link } from 'react-router-dom';
 
 // Files / Assets
 import './Home.scss';

@@ -1,1 +1,11 @@
 // Styles for Home page component
+.MenuDrawer {
+  display: absolute;
+  min-height: 100vh;
+  height: 100%;
+  width: 50vw;
+  min-width: 50%;
+  background: #AAC;
+  top: 0;
+  right: 0;
+}

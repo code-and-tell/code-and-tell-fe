@@ -6,7 +6,9 @@ import React from 'react';
 import PublicRouter from 'components/routers/PublicRouter';
 
 // Component imports
+import MenuDrawer from 'components/scaffold/MenuDrawer/MenuDrawer';
 import Header from 'components/scaffold/Header/Header';
+import View from 'components/scaffold/View/View';
 
 // Files / Assets
 import './App.scss';
@@ -15,7 +17,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <PublicRouter />
+      <View>
+        <MenuDrawer />
+        <PublicRouter />
+      </View>  
     </div>
   );
 }

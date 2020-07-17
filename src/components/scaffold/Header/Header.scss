@@ -1,11 +1,22 @@
 // Styles for Header scaffold component
+@import '../../../base.scss';
+
 .Header {
   display: flex;
   width: 100%;
-  background: #CCC;
   padding: 1rem;
+  background-color: $black;
 
-  h1 {
+  .Logo {
     font-size: 2rem;
+    color: $white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: auto;
+  }
+
+  .MenuIcon {
+    font-size: 2rem;
+    color: $white;
   }
 }

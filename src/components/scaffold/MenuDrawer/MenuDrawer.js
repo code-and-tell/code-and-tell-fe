@@ -6,19 +6,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Files / Assets
-import './About.scss';
+import './MenuDrawer.scss';
 
-const About = () => {
+const MenuDrawer = () => {
   return (
-    <div className="About">
+    <div className="MenuDrawer">
       <Link to="/">
         Home
       </Link>
-      <h1>
-        I'm the about page!
-      </h1>
+      <Link to="/about">
+        About
+      </Link>
     </div>
   );
 };
 
-export default About;
+export default MenuDrawer;

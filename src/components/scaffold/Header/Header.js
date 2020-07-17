@@ -16,24 +16,19 @@ const Header = () => {
 
   return (
     <div className="Header">
-      
-      <div className="Logo">
+
+      <Link 
+        to="/"
+        className="Logo"
+      >
         <h1>
           { title }
         </h1>
-      </div>
+      </Link>
 
+      {/* Will convert to component due to deeper business logic later */}
       <div className="MenuIcon">
         <FontAwesomeIcon icon={faBars} />
-      </div>
-
-      <div className="MenuDrawer">
-        <Link to="/">
-          Home
-        </Link>
-        <Link to="/about">
-          About
-        </Link>
       </div>
 
     </div>

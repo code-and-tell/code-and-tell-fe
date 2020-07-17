@@ -1,4 +1,4 @@
-// Tests for Header scaffold component
+// Tests for About page component
 // Core imports
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -7,13 +7,13 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 // Component imports
-import Header from './Header';
+import View from './View';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
   	<BrowserRouter>
-  		<Header />
+  		<View />
   	</BrowserRouter>,
   	div
   );

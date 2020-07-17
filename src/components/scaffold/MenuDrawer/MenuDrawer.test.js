@@ -1,4 +1,4 @@
-// Tests for Header scaffold component
+// Tests for MenuDrawer scaffold component
 // Core imports
 import React from 'react';
 import ReactDOM from 'react-dom';
