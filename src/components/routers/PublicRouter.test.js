@@ -1,4 +1,4 @@
-// Tests for App root
+// Tests for PublicRouter router component
 // Core imports
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -7,13 +7,13 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 // Component imports
-import App from './App';
+import PublicRouter from './PublicRouter';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
   	<BrowserRouter>
-  		<App />
+  		<PublicRouter />
   	</BrowserRouter>,
   	div
   );

@@ -1,4 +1,4 @@
-// Tests for App root
+// Tests for About page component
 // Core imports
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -7,13 +7,13 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 // Component imports
-import App from './App';
+import About from './About';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
   	<BrowserRouter>
-  		<App />
+  		<About />
   	</BrowserRouter>,
   	div
   );
