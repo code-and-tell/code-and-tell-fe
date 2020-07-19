@@ -6,7 +6,8 @@
   width: 100%;
   padding: 1rem;
   background-color: $black;
-
+  position: relative;
+  z-index: 9999;
   .Logo {
     font-size: 2rem;
     color: $white;

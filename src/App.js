@@ -5,6 +5,9 @@ import React from 'react';
 // Utility imports
 import PublicRouter from 'components/routers/PublicRouter';
 
+// Contexts / Services
+import { AppContextProvider } from 'contexts/AppContext/AppContext';
+
 // Component imports
 import MenuDrawer from 'components/scaffold/MenuDrawer/MenuDrawer';
 import Header from 'components/scaffold/Header/Header';
@@ -16,11 +19,13 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <View>
+      <AppContextProvider>
+        <Header />
         <MenuDrawer />
-        <PublicRouter />
-      </View>  
+        <View>
+          <PublicRouter />
+        </View>  
+      </AppContextProvider>
     </div>
   );
 }

@@ -9,9 +9,14 @@
        url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
 }
 
+// Layout / Basic Styles
 * {
   box-sizing: border-box;
   font-family: 'Open Sans';
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 // Colors

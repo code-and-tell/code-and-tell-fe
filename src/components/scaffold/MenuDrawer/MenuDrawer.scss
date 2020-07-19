@@ -1,14 +1,16 @@
 .MenuDrawer {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 320px;
+  padding: 1rem;
+  min-height: 100vh;
   background: #AAA;
   top: 0;
-  right: -320px;
+  right: -9999px;
   opacity: 0.5;
+  transition: 0.5s right ease-in-out;
   a {
     text-decoration: none;
     font-size: 1.5rem;
