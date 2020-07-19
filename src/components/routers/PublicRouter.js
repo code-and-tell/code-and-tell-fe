@@ -8,6 +8,7 @@ import { Switch, Route } from 'react-router-dom';
 // Component imports
 import Home from 'components/views/Home/Home';
 import About from 'components/views/About/About';
+import Playground from 'components/views/Playground/Playground';
 
 const PublicRouter = () => {
   return (
@@ -19,6 +20,10 @@ const PublicRouter = () => {
       <Route
         exact path="/about"
         component={About}
+      />
+      <Route
+        exact path="/playground"
+        component={Playground}
       />
     </Switch>
   );

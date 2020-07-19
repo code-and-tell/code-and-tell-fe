@@ -1,10 +1,10 @@
 // Styles for Header scaffold component
-@import '../../../base.scss';
+@import 'styles/base.scss';
 
 .Header {
   display: flex;
+  align-items: center;
   width: 100%;
-  padding: 1rem;
   background-color: $black;
   position: relative;
   z-index: 9999;
@@ -13,11 +13,15 @@
     color: $white;
     text-decoration: none;
     font-weight: 700;
+    padding-left: 0.5rem;
     margin-right: auto;
   }
 
   .MenuIcon {
     font-size: 2rem;
     color: $white;
+    cursor: pointer;
+    padding: 0.25rem;
+    padding-right: 0.5rem;
   }
 }

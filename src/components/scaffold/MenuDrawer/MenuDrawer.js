@@ -12,7 +12,8 @@ import { AppContext } from 'contexts/AppContext/AppContext';
 import './MenuDrawer.scss';
 
 const MenuDrawer = () => {
-  // Initialize our state
+
+  // Initialize our state and dispatch
   const { state, dispatch } = useContext(AppContext);
 
   // Setup our offset for the off-canvas menu
@@ -27,25 +28,47 @@ const MenuDrawer = () => {
     const menuWidth = ref.current.offsetWidth;
     const offset = state.menu.open
       ? 0
-      : -menuWidth;
+      : -(menuWidth);
     setOffset(offset);
-  }, [state.menu.open, dispatch]);
+  }, [state.menu.open, offset]);
+
+  // Closes menu when a link is clicked
+  const handleCloseMenu = () => {
+    dispatch({ 
+      type: "set-menu", 
+      payload: { open: false }
+    });
+  };
+
+  // Render menu links based on context
+  const renderMenuLinks = () => {
+    const links = state.menu.links.map(link => {
+      return (
+        <Link 
+          to={link.route}
+          onClick={(e) => handleCloseMenu()}
+          key={`link-${link.route}`}
+        >
+          {link.name}
+        </Link>
+      )
+    });
+    return links;
+  };
 
   return (
     <div 
       className={`
         MenuDrawer
-        ${state.menu.open} ? 'active' : ''
+        ${state.menu.open
+          ? "active" 
+          : ""
+        }
       `}
       ref={ref}
       style={{ right: offset }}
     >
-      <Link to="/">
-        Home
-      </Link>
-      <Link to="/about">
-        About
-      </Link>
+      {renderMenuLinks()}
     </div>
   );
 };

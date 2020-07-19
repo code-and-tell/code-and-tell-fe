@@ -1,19 +1,27 @@
+// Styles for MenuDrawer scaffold component
+@import 'styles/base.scss';
+
 .MenuDrawer {
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   min-height: 100vh;
+  width: auto;
   background: #AAA;
   top: 0;
   right: -9999px;
-  opacity: 0.5;
-  transition: 0.5s right ease-in-out;
+  min-width: 175px;
+  opacity: 0;
+  transition: 0.5s right ease-in-out, 0.5s opacity ease-in-out;
   a {
     text-decoration: none;
     font-size: 1.5rem;
-    padding: 0.25rem;
+    line-height: 1.75rem;
+  }
+
+  &.active {
+    opacity: 1;
   }
 }

@@ -19,7 +19,7 @@ const Header = () => {
   const title = "Code && Tell";
 
   // Initialize our state
-  const { state, dispatch } = useContext(AppContext);
+  const { dispatch } = useContext(AppContext);
 
   return (
     <div className="Header">
