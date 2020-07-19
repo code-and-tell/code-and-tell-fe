@@ -5,23 +5,42 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
   width: auto;
-  background: #AAA;
-  top: 0;
+  background-color: $slategray;
+  top: 3rem;
+  bottom: 0;
   right: -9999px;
   min-width: 175px;
   opacity: 0;
-  transition: 0.5s right ease-in-out, 0.5s opacity ease-in-out;
+  transition: 
+    0.5s right ease-in-out, 
+    0.5s opacity ease-in-out,
+    0.5s box-shadow ease;
   a {
     text-decoration: none;
     font-size: 1.5rem;
-    line-height: 1.75rem;
+    line-height: 3rem;
+    width: 100%;
+    background: $lightslategray;
+    text-align: center;
+    transition: 0.3s all ease;
+  }
+  &.active {
+    opacity: 0.95;
+    box-shadow: -0.25rem 0 1rem rgba(0,0,0,0.75);
   }
 
-  &.active {
-    opacity: 1;
+  a, a:active, a:visited {
+    color: $white;
+    font-variant: small-caps;
   }
+
+  a:hover {
+    color: $black;
+    background: $secondary;
+  }
+
 }
