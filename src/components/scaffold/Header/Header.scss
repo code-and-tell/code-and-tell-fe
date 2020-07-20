@@ -2,11 +2,14 @@
 @import 'styles/base.scss';
 
 .Header {
+  
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   width: 100%;
   background-color: $black;
-  position: relative;
+  position: fixed;
   z-index: 9999;
   .Logo {
     @include flex-center-all;

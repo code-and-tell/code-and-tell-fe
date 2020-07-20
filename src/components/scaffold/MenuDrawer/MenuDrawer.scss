@@ -13,7 +13,8 @@
   top: 3rem;
   bottom: 0;
   right: -9999px;
-  min-width: 175px;
+  min-width: 200px;
+  height: 100%;
   opacity: 0;
   transition: 
     0.5s right ease-in-out, 
@@ -21,12 +22,29 @@
     0.5s box-shadow ease;
   a {
     text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
     font-size: 1.5rem;
     line-height: 3rem;
     width: 100%;
     background: $lightslategray;
     text-align: center;
     transition: 0.3s all ease;
+    padding: 0 1rem;
+    margin: 0.25rem;
+    position: relative;
+    &:after {
+      transition: all 0.3s ease;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.25rem;
+      width: 0; 
+      height: 0; 
+      border-top: 1.25rem solid transparent;
+      border-bottom: 1.25rem solid transparent; 
+      border-right:1.25rem solid $secondaryDark;
+      opacity: 0;
+    }
   }
   &.active {
     opacity: 0.95;
@@ -35,12 +53,19 @@
 
   a, a:active, a:visited {
     color: $white;
-    font-variant: small-caps;
   }
 
+  a:hover,
+  a.active {
+    color: $white;
+    background: $secondaryDark;
+    &:after {
+      left: -1.25rem;
+      opacity: 1;
+    }
+  }
   a:hover {
-    color: $black;
-    background: $secondary;
+    text-shadow: 2px 2px 5px $darkslategray;
   }
 
 }

@@ -23,8 +23,13 @@ const initialState = {
     // Links can live in another file eventually. Writing inline for now
     links: [
       { name: 'Home', route: '/' },
+      { name: 'Projects', route: '/projects' },
+      { name: 'Presentations', route: '/presentations' },
+      { name: 'Tutorials', route: '/tutorials' },
+      { name: 'Community', route: '/community' },
+      { name: 'Resources', route: '/resources' },
       { name: 'About', route: '/about' },
-      { name: 'Playground', route: '/playground' }
+      { name: 'Playground', route: '/playground' },
     ]
   }
 };
