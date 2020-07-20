@@ -10,11 +10,13 @@ import './About.scss';
 
 const About = () => {
   return (
-    <div className="Home">
-      About works!
+    <div className="About">
       <Link to="/">
         Home
       </Link>
+      <h1>
+        I'm the about page!
+      </h1>
     </div>
   );
 };

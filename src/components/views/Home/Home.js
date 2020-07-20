@@ -11,10 +11,9 @@ import './Home.scss';
 const Home = () => {
   return (
     <div className="Home">
-      Home works!
-      <Link to="/about">
-        About
-      </Link>
+      <h1>
+        I'm the home page!
+      </h1>
     </div>
   );
 };

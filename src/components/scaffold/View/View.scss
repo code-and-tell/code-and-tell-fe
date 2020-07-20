@@ -1,0 +1,11 @@
+// Styles for View scaffold component
+@import '../../../base.scss';
+
+.View {
+  background: $offWhite;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
