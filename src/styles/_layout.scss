@@ -1,0 +1,23 @@
+// Layouts - Defines core element/scaffold sizes and breakpoints to be used throughout the app
+
+// Elements
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+// Breakpoints
+$bp-sm: 360px;
+$bp-md: 1366px;
+$bp-lg: 1920px; 
+
+// Mixins
+@mixin flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

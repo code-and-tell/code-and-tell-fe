@@ -1,0 +1,52 @@
+// Styles for Playground page component
+@import 'styles/base.scss';
+
+.Playground {
+  @include flex-center-all;
+  width: 100%;
+
+  .color-palettes {
+    @include flex-center-all;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    .shades, .colors {
+      @include flex-center-all;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      div {
+        @include flex-center-all;
+        width: 200px;
+        height: 200px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-size: 0.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.white { background-color: $white };
+.offWhite { background-color: $offWhite };
+.gainsboro { background-color: $gainsboro };
+.lightgray { background-color: $lightgray };
+.silver { background-color: $silver };
+.darkgray { background-color: $darkgray };
+.gray { background-color: $gray };
+.dimgray { background-color: $dimgray };
+.lightslategray { background-color: $lightslategray };
+.slategray { background-color: $slategray };
+.darkslategray { background-color: $darkslategray };
+.offBlack { background-color: $offBlack; color: $white };
+.black { background-color: $black; color: $white };
+
+.primary { background-color: $primary };
+.primaryDark { background-color: $primaryDark };
+.secondary { background-color: $secondary };
+.secondaryDark { background-color: $secondaryDark };
+.callout { background-color: $callout };
+.soft { background-color: $soft };
+.vibrant { background-color: $vibrant };

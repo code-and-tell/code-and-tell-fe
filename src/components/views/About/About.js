@@ -3,7 +3,7 @@
 import React from 'react';
 
 // Component imports
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 // Files / Assets
 import './About.scss';
@@ -11,12 +11,10 @@ import './About.scss';
 const About = () => {
   return (
     <div className="About">
-      <Link to="/">
-        Home
-      </Link>
       <h1>
-        I'm the about page!
+        About
       </h1>
+      <p>I'm the about page!</p>
     </div>
   );
 };

@@ -10,7 +10,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 // Files / Assets
-import './base.scss';
+import './styles/base.scss';
 
 import * as serviceWorker from './serviceWorker';
 
