@@ -2,6 +2,9 @@
 // Core imports
 import React, { useContext } from 'react';
 
+// Utility imports
+// import { title } from 'config.js';
+
 // Component imports
 import { Link } from 'react-router-dom';
 
@@ -10,16 +13,17 @@ import { AppContext } from 'contexts/AppContext/AppContext';
 
 // Files / Assets
 import './Header.scss';
+import Logo from 'assets/images/logo-temp.png';
+
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   
-  // Hardcoded title for now. Will move these details to another area eventually
-  const title = "Code && Tell";
-
   // Initialize our state
   const { dispatch } = useContext(AppContext);
+
+  const headerText = <h1>Code<span className="amp">&&</span>Tell</h1>;
 
   return (
     <div className="Header">
@@ -28,9 +32,8 @@ const Header = () => {
         to="/"
         className="Logo"
       >
-        <h1>
-          { title }
-        </h1>
+        <img src={ Logo } alt="logo" />
+        { headerText }
       </Link>
 
       {/* Will convert to component due to deeper business logic later */}
