@@ -3,7 +3,7 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
 
 // Component imports
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 // Contexts / Services
 import { AppContext } from 'contexts/AppContext/AppContext';
@@ -44,13 +44,15 @@ const MenuDrawer = () => {
   const renderMenuLinks = () => {
     const links = state.menu.links.map(link => {
       return (
-        <Link 
+        <NavLink 
+          exact={true}
+          activeClassName='active'
           to={link.route}
           onClick={(e) => handleCloseMenu()}
           key={`link-${link.route}`}
         >
           {link.name}
-        </Link>
+        </NavLink>
       )
     });
     return links;
